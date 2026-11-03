@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca Virtual</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#catalogo">Catálogo de Livros</a></li>
+                <li><a href="#sugestao">Sugerir Aquisição</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="catalogo">
+            <h2>Nosso Acervo</h2>
+
+            <input type="search" id="busca" placeholder="Pesquisar livro...">
+
+            <div class="grade-livros">
+                <article class="livro">
+                    <h3>Heaven Official's Blessing</h3>
+                    <p>Mo Xiang Tong Xiu</p>
+                </article>
+                <article class="livro">
+                    <h3>Sha Po Lang</h3>
+                    <p>Priest</p>
+                </article>
+                <article class="livro">
+                    <h3>Dumb Husky and His White Cat Shizun</h3>
+                    <p>Rou Bao Bu Chi Rou</p>
+                </article>
+                <article class="livro">
+                    <h3>Grandmaster of Demonic Cultivation</h3>
+                    <p>Mo Xiang Tong Xiu</p>
+                </article>
+                <article class="livro">
+                    <h3>The Scum Villain's Self-Saving System</h3>
+                    <p>Mo Xiang Tong Xiu</p>
+                </article>
+                <article class="livro">
+                    <h3>Ballad of Sword and Wine: Qiang Jin Jiu</h3>
+                    <p>Tang Jiu Qing</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sugestao">
+            <h2>Sugerir Novo Livro</h2>
+
+            <form action="#" method="post" id="form-sugestao">
+                <div class="campo">
+                    <label for="nome-leitor">Nome do Leitor</label>
+                    <input type="text" id="nome-leitor" name="nome-leitor">
+                </div>
+
+                <div class="campo">
+                    <label for="titulo-livro">Título do Livro</label>
+                    <input type="text" id="titulo-livro" name="titulo-livro">
+                </div>
+
+                <button type="submit">Enviar Sugestão</button>
+
+                <p id="mensagem"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web - Biblioteca Virtual</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
